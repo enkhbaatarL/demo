@@ -1,0 +1,34 @@
+{        
+        "variables": [],
+	"info": {
+		"name": "sample",
+		"_postman_id": "f5afdb12-791e-f9e3-9cfd-34cb2b0354ef",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sample_collection",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"tests[\"First User ID is 1\"] = jsonData[0].userId === 1;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "https://jsonplaceholder.typicode.com/posts",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "new collection"
+			},
+			"response": []
+		}
+	]
+}
