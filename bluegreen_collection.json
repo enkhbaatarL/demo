@@ -23,7 +23,7 @@
 				}
 			],
 			"request": {
-				"url": "http://apitest-service/home",
+				"url": "http://169.56.99.56:30064/home",
 				"method": "GET",
 				"header": [],
 				"body": {},
