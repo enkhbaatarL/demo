@@ -1,0 +1,35 @@
+{
+	"variables": [],
+	"info": {
+		"name": "bluegreen",
+		"_postman_id": "c257039b-7caf-cc70-ac8e-bd64abebb4bc",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "bluegreen",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"tests[\"if app is Bluegreen \"] = jsonData[0].app === \"Bluegreen\";",
+							"tests[\"if data is blue \"] = jsonData[0].data === \"blue\";"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://apitest-service/home",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
