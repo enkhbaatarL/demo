@@ -17,7 +17,7 @@
 						"exec": [
 							"var jsonData = JSON.parse(responseBody);",
 							"tests[\"if app is Bluegreen \"] = jsonData[0].app === \"Bluegreen\";",
-							"tests[\"if data is blue \"] = jsonData[0].data === \"green\";"
+							"tests[\"if data is blue \"] = jsonData[0].data === \"blue\";"
 						]
 					}
 				}
