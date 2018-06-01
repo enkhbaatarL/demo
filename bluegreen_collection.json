@@ -23,7 +23,7 @@
 				}
 			],
 			"request": {
-				"url": "http://apitest-service/home",
+				"url": "http://apitest-service:8080/home",
 				"method": "GET",
 				"header": [],
 				"body": {},
